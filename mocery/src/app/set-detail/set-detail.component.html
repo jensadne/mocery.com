@@ -1,0 +1,15 @@
+<ng-container *ngIf="set">
+	<div class="row">
+		<h2>{{ set.number }} {{ set.name }}</h2>
+	</div>
+	<div class="row">
+
+	</div>
+	
+	<div class="row">
+		-- inventory here --
+	</div>
+</ng-container>
+<ng-container *ngIf="!set">
+  Loading set details...
+</ng-container>

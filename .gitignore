@@ -35,3 +35,10 @@ nosetests.xml
 .project
 .pydevproject
 /brixdb
+
+# Vim
+*.sw[po]
+
+# import files
+/base
+/inventories

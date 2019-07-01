@@ -1,0 +1,23 @@
+<ng-container *ngIf="part">
+	<h2>
+		{{ part.number }}  
+		{{ part.name }}  
+	</h2>
+	<div *ngIf="ownedColours.length">
+		<h3>Your collection</h3>
+		<table class="table table-striped table-condensed">
+			<tr>
+				<th>Colour</th>
+				<th>Count</th>
+			</tr>
+			<tr *ngFor="let colour of ownedColours">
+				<td>
+					<a routerLink="/part/{{ part.number }}/{{ colour.colour_slug }}">{{ colour.colour_name }}</a>
+				</td>
+				<td>
+					{{ colour.count }}
+				</td>
+			</tr>
+		</table>
+	</div>
+</ng-container>

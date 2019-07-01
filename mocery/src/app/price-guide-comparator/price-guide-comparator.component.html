@@ -1,0 +1,21 @@
+Comparing {{ elementId }}<br>
+<span *ngIf="message">{{ message }}</span>
+<ng-container *ngIf="bricksnpiecesPrice">
+	<div *ngIf="bricklinkPrice" class="span-12">
+		Cheapest Bricklink price is: {{ bricklinkPrice.price }} NOK
+	</div>
+	<div *ngIf="bricksnpiecesPrice" class="span-12">
+		Bricks&amp;Pieces price is {{ bricksnpiecesPrice.price }} NOK
+	</div>
+	<div class="row">
+		<span *ngIf="bricklinkPrice.price < bricksnpiecesPrice.price">
+			Cheapest on Bricklink!
+		</span>
+		<span *ngIf="bricklinkPrice.price > bricksnpiecesPrice.price">
+			Cheapest on Bricks&amp;Pieces!
+		</span>
+		<span *ngIf="bricklinkPrice.price == bricksnpiecesPrice.price">
+			Price is the same!
+		</span>
+	</div>
+</ng-container>

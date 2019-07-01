@@ -1,0 +1,8 @@
+<h2>Colours</h2>
+<table class="table table-striped table-condensed">
+	<tr *ngFor="let colour of colours">
+		<td>
+			<a routerLink="/colour/{{ colour.slug }}">{{ colour.name }}</a>
+		</td>
+	</tr>
+</table>

@@ -44,7 +44,7 @@ import { PriceGuideComparatorComponent } from './price-guide-comparator/price-gu
         cookieName: 'csrftoken',
         headerName: 'X-CSRFToken',
     }),
-    NgbModule.forRoot(),
+    NgbModule,
     AppRoutingModule,
   ],
   providers: [

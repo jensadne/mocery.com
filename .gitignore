@@ -34,7 +34,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# symlinks to python packages
 /brixdb
+/pyxltools
 
 # Vim
 *.sw[po]
@@ -42,3 +45,6 @@ nosetests.xml
 # import files
 /base
 /inventories
+*.xls
+*.xlsx
+*.[ct]sv
